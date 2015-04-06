@@ -1,0 +1,21 @@
+{
+  "name": "graphics",
+  "version": "1.0.0",
+  "description": "Spider chart example",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.4",
+    "node-static": "^0.7.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spider",
+    "chart"
+  ],
+  "author": "nyxz",
+  "license": "ISC"
+}
