@@ -1,0 +1,65 @@
+/* line 1, ./src/sass/style.scss */
+body {
+  padding: 20px;
+}
+
+/* Spider chart */
+/* line 6, ./src/sass/style.scss */
+polygon {
+  stroke-width: 10px !important;
+  stroke-opacity: 50%;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4.0;
+}
+
+/* line 13, ./src/sass/style.scss */
+.radar-chart .area {
+  fill-opacity: 0.7;
+}
+
+/* line 17, ./src/sass/style.scss */
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+
+/* line 21, ./src/sass/style.scss */
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+
+/* line 25, ./src/sass/style.scss */
+.area.company-values, .company-values .circle {
+  fill: #e1302c;
+  stroke: #e1642c;
+}
+
+/* line 30, ./src/sass/style.scss */
+.area.person-values, .person-values .circle {
+  fill: #478ad6;
+  stroke: #94b9e2;
+}
+
+/* line 35, ./src/sass/style.scss */
+.axis {
+  color: aquamarine !important;
+}
+
+/* Slider chart */
+/* line 40, ./src/sass/style.scss */
+#sliderchart-container {
+  height: 80px;
+  width: 400px;
+}
+
+/* line 45, ./src/sass/style.scss */
+line {
+  stroke: #d77;
+  stroke-width: 1;
+}
+
+/* line 50, ./src/sass/style.scss */
+ellipse {
+  /* fill: #A2F; */
+  stroke: #000;
+  stroke-width: 0.5;
+}

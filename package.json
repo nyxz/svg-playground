@@ -6,6 +6,10 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.1",
     "gulp-util": "^3.0.4",
     "node-static": "^0.7.6"
   },
