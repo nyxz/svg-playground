@@ -6,11 +6,21 @@ function sliderchart(data, chartContainerId) {
 
     var paper = Raphael(chartContainerId, width, height);
     var line = paper.path(['M', 0, mid, 'L', width, mid]);
+
+    var animation = getMoveAnimation(180);
+    var compValCircle =  paper.circle(32, mid, 20).attr({'stroke-width': 4, 'stroke': '#6BB2E4', 'fill': '#6BB2E4'});
+    compValCircle.animate(animation.delay(1000));
+
     paper.setStart();
-    paper.circle(30, mid, 28).attr({'stroke-width': 4, 'stroke': '#005AB2'});
-    paper.circle(30, mid, 20).attr({'stroke-width': 4, 'stroke': '#D72B14', 'fill': 'url(../img/person-redbg-40x40.png)'});
+    paper.circle(32, mid, 28).attr({'stroke-width': 4, 'stroke': '#005AB2'});
+    paper.circle(32, mid, 20).attr({'stroke-width': 4, 'stroke': '#D72B14', 'fill': 'url(../img/person-redbg-40x40.png)'});
     var circleSet = paper.setFinish();
     circleSet.animate({cx: 200}, 3000, "elastic");
+
+}
+
+function getMoveAnimation(distance) {
+	return Raphael.animation({cx : distance}, 3000, "elastic");
 }
 
 
