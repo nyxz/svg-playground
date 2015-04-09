@@ -1,65 +1,52 @@
-/* line 1, ./src/sass/style.scss */
+/* line 5, ./src/sass/style.scss */
 body {
   padding: 20px;
 }
 
 /* Spider chart */
-/* line 6, ./src/sass/style.scss */
-polygon {
+/* line 11, ./src/sass/style.scss */
+#spiderchart-container polygon {
   stroke-width: 10px !important;
   stroke-opacity: 50%;
   stroke-linejoin: round;
   stroke-miterlimit: 4.0;
 }
-
-/* line 13, ./src/sass/style.scss */
-.radar-chart .area {
+/* line 19, ./src/sass/style.scss */
+#spiderchart-container .radar-chart .area {
   fill-opacity: 0.7;
 }
-
-/* line 17, ./src/sass/style.scss */
-.radar-chart.focus .area {
+/* line 23, ./src/sass/style.scss */
+#spiderchart-container .radar-chart .focus .area {
   fill-opacity: 0.3;
 }
-
-/* line 21, ./src/sass/style.scss */
-.radar-chart.focus .area.focused {
+/* line 26, ./src/sass/style.scss */
+#spiderchart-container .radar-chart .focus .area .focused {
   fill-opacity: 0.9;
 }
-
-/* line 25, ./src/sass/style.scss */
-.area.company-values, .company-values .circle {
+/* line 32, ./src/sass/style.scss */
+#spiderchart-container .area.company-values, #spiderchart-container .company-values .circle {
   fill: #e1302c;
   stroke: #e1642c;
 }
-
-/* line 30, ./src/sass/style.scss */
-.area.person-values, .person-values .circle {
+/* line 37, ./src/sass/style.scss */
+#spiderchart-container .area.person-values, #spiderchart-container .person-values .circle {
   fill: #478ad6;
   stroke: #94b9e2;
 }
 
-/* line 35, ./src/sass/style.scss */
-.axis {
-  color: aquamarine !important;
-}
-
 /* Slider chart */
-/* line 40, ./src/sass/style.scss */
+/* line 45, ./src/sass/style.scss */
 #sliderchart-container {
   height: 80px;
   width: 400px;
 }
-
-/* line 45, ./src/sass/style.scss */
-line {
-  stroke: #d77;
-  stroke-width: 1;
+/* line 49, ./src/sass/style.scss */
+#sliderchart-container path {
+  stroke: #E0E0E0;
+  stroke-width: 4px;
 }
-
-/* line 50, ./src/sass/style.scss */
-ellipse {
-  /* fill: #A2F; */
-  stroke: #000;
-  stroke-width: 0.5;
+/* line 54, ./src/sass/style.scss */
+#sliderchart-container circle {
+  stroke-width: 4px;
+  opacity: 0.7;
 }

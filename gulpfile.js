@@ -35,7 +35,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('./src/sass/**/*.sass', ['sass']);
+	gulp.watch('./src/sass/**/*.scss', ['sass']);
 	gutil.log('Watching for changes...');
 });
 
