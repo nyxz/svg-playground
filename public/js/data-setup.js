@@ -2,12 +2,12 @@ var data = [
   {
     className: 'company-values',
     axes: [
-      {axis: "Exceed client<br/> expectation", value: 100},
-      {axis: "Communicate openly", value: 100},
-      {axis: "Innovate", value: 100},
-      {axis: "Embrace diversity", value: 100},
-      {axis: "Lead the way", value: 100},
-      {axis: "Constantly learn", value: 100}
+      {axis: "Exceed client expectation", value: 100},
+      {axis: "Communicate openly", value: 89},
+      {axis: "Innovate", value: 54},
+      {axis: "Embrace diversity", value: 92},
+      {axis: "Lead the way", value: 77},
+      {axis: "Constantly learn", value: 34}
     ]
   },
   {

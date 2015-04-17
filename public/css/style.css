@@ -37,16 +37,20 @@ body {
 /* Slider chart */
 /* line 45, ./src/sass/style.scss */
 #sliderchart-container {
-  height: 80px;
   width: 400px;
 }
-/* line 49, ./src/sass/style.scss */
+/* line 48, ./src/sass/style.scss */
 #sliderchart-container path {
   stroke: #E0E0E0;
   stroke-width: 4px;
 }
-/* line 54, ./src/sass/style.scss */
+/* line 53, ./src/sass/style.scss */
 #sliderchart-container circle {
   stroke-width: 4px;
   opacity: 0.7;
+}
+/* line 58, ./src/sass/style.scss */
+#sliderchart-container .sliderchart-node {
+  height: 80px;
+  width: 400px;
 }

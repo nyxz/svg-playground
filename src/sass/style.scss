@@ -43,7 +43,6 @@ body {
 
 /* Slider chart */
 #sliderchart-container {
-  height: 80px;
   width: 400px;
 
   path {
@@ -54,5 +53,10 @@ body {
   circle {
     stroke-width: 4px;
     opacity: 0.7;
+  }
+
+  .sliderchart-node {
+    height: 80px;
+    width: 400px;
   }
 }
