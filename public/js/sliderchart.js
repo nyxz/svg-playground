@@ -5,10 +5,28 @@ function sliderchart(data, chartContainerId) {
 	var maxValForPerson = _maxVal(personData);
 	var maxVal = maxValForPerson > maxValForCompany ? maxValForPerson : maxValForCompany;
 
+	var container = $('#' + chartContainerId);
+
+	var chartTableName = 'sliderchart-table';
+	container.append('<table id="' + chartTableName + '"></table>');
+
+	var chartTable = $('#' + chartTableName);
 	personData.forEach(function(entry, index) {
-		var currWrapper = createWrapper(chartContainerId, index);
+		var rowId = "axis-label-" + index;
+		chartTable.append('<tr class="axis-label" id="' + rowId + '"></tr>');
+
+		var currRow = $('#' + rowId);
+		currRow.append('<td>' + entry.axis + '</td>');
+
+		var currWrapper = createWrapper(currRow, index);
 		injectGraphic(currWrapper, entry.value, companyData[index].value, maxVal);
 	});
+}
+
+function createWrapper(container, index) {
+	var generatedId = 'sliderchart-node-' + index;
+	container.append('<td><div class="sliderchart-node" id="' + generatedId + '"><div></td>');
+	return $('#' + generatedId);
 }
 
 function injectGraphic(container, companyValue, personValue, maxVal) {
@@ -38,14 +56,7 @@ function injectGraphic(container, companyValue, personValue, maxVal) {
 
 function getMoveAnimation(distance) {
 	var duration = 1000; // in milliseconds
-	return Raphael.animation({cx : distance}, duration, "backOut");
-}
-
-function createWrapper(containerId, index) {
-	var container = $('#' + containerId);
-	var generatedId = 'sliderchart-node-' + index;
-	container.append('<div class="sliderchart-node" id="' + generatedId + '"><div>');
-	return $('#' + generatedId);
+	return Raphael.animation({cx : distance}, duration, "<>");
 }
 
 function _maxVal(objectArr) {
