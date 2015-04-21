@@ -75,15 +75,27 @@ body {
   }
 }
 
-
-#chart {
-    left: 50%;
-    margin: -150px 0 0 -400px;
-    position: absolute;
-    top: 50%;
-    width: 300px;
-    width: 800px;
-    text {
-      fill: darken($blue, 30%);
+#dotschart-container {
+  circle {
+    fill-opacity: .9 !important;
+    &.strong-fit {
+      stroke: $purple;
+      fill: $purple;
     }
+    &.weak-fit {
+      stroke: $orange;
+      fill: $orange;
+    }
+    &.current-profile-fit {
+      stroke: $purple;
+      stroke-width: 2px;
+      fill: $purple;
+      fill-opacity: 1 !important;
+    }
+    &.current-profile-fit-border {
+      stroke: $blue;
+      stroke-width: 3px;
+    }
+  }
 }
+

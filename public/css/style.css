@@ -74,15 +74,28 @@ body {
 }
 
 /* line 79, ./src/sass/style.scss */
-#chart {
-  left: 50%;
-  margin: -150px 0 0 -400px;
-  position: absolute;
-  top: 50%;
-  width: 300px;
-  width: 800px;
+#dotschart-container circle {
+  fill-opacity: .9 !important;
 }
-/* line 86, ./src/sass/style.scss */
-#chart text {
-  fill: #1c669a;
+/* line 81, ./src/sass/style.scss */
+#dotschart-container circle.strong-fit {
+  stroke: #B95D9F;
+  fill: #B95D9F;
+}
+/* line 85, ./src/sass/style.scss */
+#dotschart-container circle.weak-fit {
+  stroke: #F16460;
+  fill: #F16460;
+}
+/* line 89, ./src/sass/style.scss */
+#dotschart-container circle.current-profile-fit {
+  stroke: #B95D9F;
+  stroke-width: 2px;
+  fill: #B95D9F;
+  fill-opacity: 1 !important;
+}
+/* line 95, ./src/sass/style.scss */
+#dotschart-container circle.current-profile-fit-border {
+  stroke: #6BB2E4;
+  stroke-width: 3px;
 }
