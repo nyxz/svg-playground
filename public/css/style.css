@@ -1,70 +1,88 @@
-/* line 5, ./src/sass/style.scss */
+/* line 6, ./src/sass/style.scss */
 body {
   padding: 20px;
 }
 
 /* Spider chart */
 /* line 11, ./src/sass/style.scss */
-#spiderchart-container polygon {
-  stroke-width: 10px !important;
-  stroke-opacity: 50%;
-  stroke-linejoin: round;
-  stroke-miterlimit: 4.0;
+#spiderchart-container {
+  /*
+  polygon {
+    stroke-width: 10px !important;
+    stroke-opacity: 50%;
+    stroke-linejoin: round;
+    stroke-miterlimit: 4.0;
+  }
+  */
 }
-/* line 19, ./src/sass/style.scss */
+/* line 22, ./src/sass/style.scss */
 #spiderchart-container .radar-chart.area {
   fill-opacity: 0.7;
 }
-/* line 23, ./src/sass/style.scss */
+/* line 26, ./src/sass/style.scss */
 #spiderchart-container .radar-chart.focus.area {
   fill-opacity: 0.3;
 }
-/* line 26, ./src/sass/style.scss */
+/* line 29, ./src/sass/style.scss */
 #spiderchart-container .radar-chart.focus.area .focused {
   fill-opacity: 0.9;
 }
-/* line 32, ./src/sass/style.scss */
+/* line 35, ./src/sass/style.scss */
 #spiderchart-container .area.company-values, #spiderchart-container .company-values .circle {
-  fill: #e1302c;
-  stroke: #e1642c;
+  fill: #ed3631;
+  stroke: #F16460;
 }
-/* line 37, ./src/sass/style.scss */
+/* line 40, ./src/sass/style.scss */
 #spiderchart-container .area.person-values, #spiderchart-container .person-values .circle {
-  fill: #478ad6;
-  stroke: #94b9e2;
+  fill: #409cdc;
+  stroke: #6BB2E4;
 }
 
 /* Slider chart */
-/* line 45, ./src/sass/style.scss */
+/* line 47, ./src/sass/style.scss */
 #sliderchart-container {
   width: 400px;
 }
-/* line 48, ./src/sass/style.scss */
+/* line 50, ./src/sass/style.scss */
 #sliderchart-container path {
   stroke: #E0E0E0;
   stroke-width: 4px;
 }
-/* line 53, ./src/sass/style.scss */
+/* line 55, ./src/sass/style.scss */
 #sliderchart-container circle {
   stroke-width: 4px;
   opacity: 0.7;
 }
-/* line 58, ./src/sass/style.scss */
+/* line 60, ./src/sass/style.scss */
 #sliderchart-container .sliderchart-node {
   height: 80px;
   width: 400px;
 }
-/* line 63, ./src/sass/style.scss */
+/* line 65, ./src/sass/style.scss */
 #sliderchart-container table {
   border-collapse: separate;
   border-spacing: 10px;
 }
-/* line 66, ./src/sass/style.scss */
+/* line 68, ./src/sass/style.scss */
 #sliderchart-container table tr {
   white-space: nowrap;
 }
-/* line 68, ./src/sass/style.scss */
+/* line 70, ./src/sass/style.scss */
 #sliderchart-container table tr.axis-label {
   color: #2482c5;
   font-weight: bold;
+}
+
+/* line 79, ./src/sass/style.scss */
+#chart {
+  left: 50%;
+  margin: -150px 0 0 -400px;
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  width: 800px;
+}
+/* line 86, ./src/sass/style.scss */
+#chart text {
+  fill: #1c669a;
 }

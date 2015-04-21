@@ -22,3 +22,35 @@ var data = [
     ]
   }
 ];
+
+var cultureFitValues = [];
+var axisx = [];
+var axisy = [];
+
+for (var i = 0; i < 100; i++) {
+  cultureFitValues.push({
+    name: randomName(),
+    value: randomValue()
+  });
+}
+
+var num = 10;
+for (var i = 0; i < num; i++) {
+  axisx.push(i);
+  if (i % 2 == 0) {
+    axisy.push(i / 2);
+  }
+};
+
+
+function randomName() {
+  return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
+}
+
+function randomValue() {
+  return ((Math.random() * 10) + 1).toFixed(2);
+}
+
+function randomIntBetween(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}

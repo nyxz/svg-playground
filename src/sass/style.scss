@@ -1,6 +1,7 @@
 $blue: #6BB2E4;
 $orange: #F16460;
 $purple: #B95D9F;
+$gray: #E0E0E0;
 
 body {
   padding: 20px;
@@ -8,12 +9,14 @@ body {
 
 /* Spider chart */
 #spiderchart-container {
+  /*
   polygon {
     stroke-width: 10px !important;
     stroke-opacity: 50%;
     stroke-linejoin: round;
     stroke-miterlimit: 4.0;
   }
+  */
 
   .radar-chart {
     &.area {
@@ -30,15 +33,14 @@ body {
   }
 
   .area.company-values, .company-values .circle {
-    fill: #e1302c;
-    stroke: #e1642c;
+    fill: darken($orange, 10%);
+    stroke: $orange;
   }
 
   .area.person-values, .person-values .circle {
-    fill: #478ad6;
-    stroke: #94b9e2;
+    fill: darken($blue, 10%);
+    stroke: $blue;
   }
-
 }
 
 /* Slider chart */
@@ -46,7 +48,7 @@ body {
   width: 400px;
 
   path {
-    stroke: #E0E0E0;
+    stroke: $gray;
     stroke-width: 4px;
   }
 
@@ -71,4 +73,17 @@ body {
       }
     }
   }
+}
+
+
+#chart {
+    left: 50%;
+    margin: -150px 0 0 -400px;
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    width: 800px;
+    text {
+      fill: darken($blue, 30%);
+    }
 }
