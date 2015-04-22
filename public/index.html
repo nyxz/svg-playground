@@ -1,32 +1,33 @@
 <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/pure-min.css"/>
+		<link rel="stylesheet" href="css/radar-chart.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
 
-<meta charset="utf-8">
-<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css"/>
-<link rel="stylesheet" href="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.css"/>
-<link rel="stylesheet" href="css/style.css"/>
+	<body>
+		<h1>Cultural fit charts</h1>
 
+		<h2>Spider chart</h2>
+		<div id="spiderchart-container"></div>
 
-<span></span>
+		<h2>Slider chart</h2>
+		<div id="sliderchart-container"></div>
 
-<h1>Cultural fit charts</h1>
+		<h2>Dots chart</h2>
+		<div id="dotschart-container"></div>
+	</body>
 
-<h2>Spider chart</h2>
-<div id="spiderchart-container"></div>
+	<script src="js/vendor/d3.v3.js"></script>
+	<script src="js/vendor/radar-chart.js"></script>
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="js/vendor/raphael-min.js"></script>
 
-<h2>Slider chart</h2>
-<div id="sliderchart-container"></div>
-
-<h2>Dots chart</h2>
-<div id="dotschart-container"></div>
-
-
-<script src="http://d3js.org/d3.v3.js"></script>
-<script src="https://rawgit.com/tpreusse/radar-chart-d3/master/src/radar-chart.js"></script>
-<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="js/vendor/raphael-min.js"></script>
-
-<script src="js/data-setup.js"></script>
-<script src="js/spiderchart.js"></script>
-<script src="js/sliderchart.js"></script>
-<script src="js/dotschart.js"></script>
-<script src="js/index.js"></script>
+	<script src="js/data-setup.js"></script>
+	<script src="js/spiderchart.js"></script>
+	<script src="js/sliderchart.js"></script>
+	<script src="js/dotschart.js"></script>
+	<script src="js/index.js"></script>
+</html>

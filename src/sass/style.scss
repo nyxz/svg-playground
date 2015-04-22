@@ -1,4 +1,5 @@
 $blue: #6BB2E4;
+$dark-blue: #005AB2;
 $orange: #F16460;
 $purple: #B95D9F;
 $gray: #E0E0E0;
@@ -55,6 +56,15 @@ body {
   circle {
     stroke-width: 4px;
     opacity: 0.7;
+
+    &.person-circle-border {
+      stroke-width: 4;
+      stroke: $dark-blue;
+    }
+    &.person-circle {
+      stroke-width: 4;
+      stroke: darken($orange, 15%);
+    }
   }
 
   .sliderchart-node {
@@ -78,23 +88,28 @@ body {
 #dotschart-container {
   circle {
     fill-opacity: .9 !important;
+
     &.strong-fit {
-      stroke: $purple;
       fill: $purple;
+      stroke: none;
     }
+
     &.weak-fit {
       stroke: $orange;
       fill: $orange;
     }
+
     &.current-profile-fit {
-      stroke: $purple;
+      stroke: darken($purple, 4%);
       stroke-width: 2px;
       fill: $purple;
       fill-opacity: 1 !important;
     }
+
     &.current-profile-fit-border {
-      stroke: $blue;
-      stroke-width: 3px;
+      stroke: $dark-blue;
+      stroke-width: 4px;
+      opacity: 0.7;
     }
   }
 }

@@ -47,8 +47,8 @@ function injectGraphic(container, companyValue, personValue, maxVal) {
     compValCircle.animate(companyAnimation.delay(500));
 
     paper.setStart();
-    paper.circle(initialCircleX, mid, 28).attr({'stroke-width': 4, 'stroke': '#005AB2'});
-    paper.circle(initialCircleX, mid, 20).attr({'stroke-width': 4, 'stroke': '#D72B14', 'fill': 'url(../img/person-redbg-40x40.png)'});
+    paper.circle(initialCircleX, mid, 28).node.setAttribute('class', 'person-circle-border');
+    paper.circle(initialCircleX, mid, 20).attr({fill: 'url(../img/person-redbg-40x40.png)'}).node.setAttribute('class', 'person-circle');
     var circleSet = paper.setFinish();
     var personAnimation = getMoveAnimation(normPersonVal);
     circleSet.animate(personAnimation);
