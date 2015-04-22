@@ -1,3 +1,9 @@
+var companyCircleStyle = {
+	'stroke-width': 4,
+	'stroke': '#6BB2E4',
+	'fill': '#6BB2E4'
+};
+
 function sliderchart(data, chartContainerId) {
 	var companyData = data[0].axes;
 	var personData = data[1].axes;
@@ -43,7 +49,7 @@ function injectGraphic(container, companyValue, personValue, maxVal) {
     var line = paper.path(['M', 0, mid, 'L', width, mid]);
 
     var companyAnimation = getMoveAnimation(normCompanyVal);
-    var compValCircle =  paper.circle(initialCircleX, mid, 20).attr({'stroke-width': 4, 'stroke': '#6BB2E4', 'fill': '#6BB2E4'});
+    var compValCircle =  paper.circle(initialCircleX, mid, 20).attr(companyCircleStyle);
     compValCircle.animate(companyAnimation.delay(500));
 
     paper.setStart();

@@ -10,29 +10,40 @@ body {
 
 /* Spider chart */
 #spiderchart-container {
-  /*
-  polygon {
+  /*polygon {
     stroke-width: 10px !important;
     stroke-opacity: 50%;
     stroke-linejoin: round;
     stroke-miterlimit: 4.0;
+  }*/
+  text {
+    fill: darken($blue, 20%);
+    font-size: 12pt;
+    font-weight: bold;
   }
-  */
-
   .radar-chart {
+    padding: 0 200px;
     &.area {
       fill-opacity: 0.7;
     }
     &.focus {
-      &.area {
+      & .area {
         fill-opacity: 0.3;
+        &.focused {
+          fill-opacity: 0.9;
+        }
       }
-      &.area .focused {
-        fill-opacity: 0.9;
+    }
+
+    & .axis .legend {
+      &.left {
+        text-anchor: end;
+      }
+      &.right {
+        text-anchor: start;
       }
     }
   }
-
   .area.company-values, .company-values .circle {
     fill: darken($orange, 10%);
     stroke: $orange;
